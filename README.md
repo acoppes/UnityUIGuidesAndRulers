@@ -8,4 +8,4 @@ Some simple tools to help developing UIs in Unity.
 
 ![Alt text](images/ruler-example2.png?raw=true "Guide with ruler")
 
-![Alt text](images/ruler-example2.png?raw=true "Using different anchoring")
+![Alt text](images/example3.png?raw=true "Using different anchoring")

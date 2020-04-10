@@ -23,18 +23,16 @@ namespace Gemserk.UIGuidesAndRulers
 
         public bool fill = true;
 
-        public float width;
-
-        private void LateUpdate()
-        {
-            if (direction == Direction.Horizontal)
-            {
-                rectTransform.sizeDelta = new Vector2(size, width);
-            } else if (direction == Direction.Vertical)
-            {
-                rectTransform.sizeDelta = new Vector2(width, size);
-            }
-        }
+        // private void LateUpdate()
+        // {
+        //     if (direction == Direction.Horizontal)
+        //     {
+        //         rectTransform.sizeDelta = new Vector2(size, width);
+        //     } else if (direction == Direction.Vertical)
+        //     {
+        //         rectTransform.sizeDelta = new Vector2(width, size);
+        //     }
+        // }
 
         private void OnDrawGizmos()
         {
@@ -44,8 +42,12 @@ namespace Gemserk.UIGuidesAndRulers
             var position = rectTransform.position;
             Gizmos.color = color;
 
+            var width = 1.0f;
+
             if (direction == Direction.Horizontal)
             {
+                width = rectTransform.sizeDelta.y;
+                
                 position.x = 0;
                 
                 var adjustAnchor = rectTransform.pivot.y - 0.5f;
@@ -63,6 +65,8 @@ namespace Gemserk.UIGuidesAndRulers
                 }
             } else if (direction == Direction.Vertical)
             {
+                width = rectTransform.sizeDelta.x;
+                
                 position.y = 0;
 
                 var adjustAnchor = rectTransform.pivot.x - 0.5f;

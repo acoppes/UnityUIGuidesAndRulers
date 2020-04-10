@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4872069217150380887
+--- !u!1 &1457874621937016169
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5136432260254083012}
-  - component: {fileID: 2335565862422612486}
+  - component: {fileID: 1219980651869819386}
+  - component: {fileID: 4707463767252553059}
   m_Layer: 5
-  m_Name: HorizontalRuler 1
+  m_Name: VerticalRuler
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &5136432260254083012
+--- !u!224 &1219980651869819386
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872069217150380887}
+  m_GameObject: {fileID: 1457874621937016169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,24 +34,22 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 10000}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2335565862422612486
+--- !u!114 &4707463767252553059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4872069217150380887}
+  m_GameObject: {fileID: 1457874621937016169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c83fd2238f96414f8d6f9113f75d98d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 01bd9049d7b569044b551c86358bb329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   label: Vertical
-  rectTransform: {fileID: 5136432260254083012}
+  rectTransform: {fileID: 1219980651869819386}
   direction: 1
   hide: 0
-  color: {r: 1, g: 0, b: 1, a: 1}
-  fill: 1
-  width: 100
+  color: {r: 1, g: 0, b: 0, a: 1}

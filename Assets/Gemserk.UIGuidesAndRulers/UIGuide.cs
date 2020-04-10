@@ -47,6 +47,9 @@ namespace Gemserk.UIGuidesAndRulers
             if (direction == Direction.Horizontal)
             {
                 position.x = 0;
+                
+                var adjustAnchor = rectTransform.pivot.y - 0.5f;
+                position.y -= adjustAnchor * width;
 
                 Gizmos.DrawWireCube(position, new Vector3(size, width, 0));
 
@@ -61,6 +64,9 @@ namespace Gemserk.UIGuidesAndRulers
             } else if (direction == Direction.Vertical)
             {
                 position.y = 0;
+
+                var adjustAnchor = rectTransform.pivot.x - 0.5f;
+                position.x -= adjustAnchor * width;
                 
                 Gizmos.DrawWireCube(position, new Vector3(width, size, 0));
 

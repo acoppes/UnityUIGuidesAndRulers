@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5136432260254083012}
   - component: {fileID: 2335565862422612486}
   m_Layer: 5
-  m_Name: HorizontalRuler
+  m_Name: HorizontalGuide
   m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

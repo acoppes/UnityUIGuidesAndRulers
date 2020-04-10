@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Gemserk.UICustomRulers
 {
     [ExecuteInEditMode]
-    public class UIRuler : MonoBehaviour
+    public class UIMultiRuler : MonoBehaviour
     {
         private static readonly float size = 10000;
         private static readonly float selectionSize = 20;
@@ -25,6 +25,8 @@ namespace Gemserk.UICustomRulers
         public bool hide;
         public Color color = Color.magenta;
 
+        public float width;
+
         private void LateUpdate()
         {
             if (direction == Direction.Horizontal)
@@ -44,14 +46,21 @@ namespace Gemserk.UICustomRulers
             var position = rectTransform.position;
             Gizmos.color = color;
 
+            var halfWidth = new Vector3(width * 0.5f, 0, 0);
+            var halfHeight = new Vector3(0, width * 0.5f, 0);
+
             if (direction == Direction.Horizontal)
             {
                 position.x = 0;
-                Gizmos.DrawLine(position - new Vector3(size, 0, 0), position + new Vector3(size, 0, 0));
+                Gizmos.DrawLine(position - new Vector3(size, 0, 0) + halfHeight, position + new Vector3(size, 0, 0) + halfHeight);
+                Gizmos.DrawLine(position - new Vector3(size, 0, 0) - halfHeight, position + new Vector3(size, 0, 0) - halfHeight);
+
             } else if (direction == Direction.Vertical)
             {
                 position.y = 0;
-                Gizmos.DrawLine(position - new Vector3(0, size, 0), position + new Vector3(0, size, 0));
+                Gizmos.DrawLine(position - new Vector3(0, size, 0) + halfWidth, position + new Vector3(0, size, 0) + halfWidth);
+                Gizmos.DrawLine(position - new Vector3(size, 0, 0) - halfWidth, position + new Vector3(size, 0, 0) - halfWidth);
+
             }
             
 #if UNITY_EDITOR
@@ -68,7 +77,7 @@ namespace Gemserk.UICustomRulers
                     p = rectTransform.position.x;
                 }
                 
-                UnityEditor.Handles.Label(rectTransform.position, $"{label}: {p}", new GUIStyle()
+                UnityEditor.Handles.Label(rectTransform.position, $"{label}: pos:{p:0.0}, size:{width:0.0}", new GUIStyle()
                 {
                     normal = new GUIStyleState
                     {

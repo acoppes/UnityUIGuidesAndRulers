@@ -6,6 +6,7 @@ namespace Gemserk.UICustomRulers
     public class UIRuler : MonoBehaviour
     {
         private static readonly float size = 10000;
+        private static readonly float selectionSize = 20;
         
         public enum Direction
         {
@@ -17,6 +18,8 @@ namespace Gemserk.UICustomRulers
         // TODO: automatically turn it off during runtime unless forced.
         // TODO: we could have an editor that shows rulers only if editor is open
 
+        public bool shotPosition = true;
+
         public string label;
         
         public RectTransform rectTransform;
@@ -26,7 +29,13 @@ namespace Gemserk.UICustomRulers
 
         private void LateUpdate()
         {
-            rectTransform.sizeDelta = Vector2.zero;
+            if (direction == Direction.Horizontal)
+            {
+                rectTransform.sizeDelta = new Vector2(size, selectionSize);
+            } else if (direction == Direction.Vertical)
+            {
+                rectTransform.sizeDelta = new Vector2(selectionSize, size);
+            }
             
             // var position = rectTransform.position;
             // if (direction == Direction.Horizontal)
@@ -61,7 +70,17 @@ namespace Gemserk.UICustomRulers
             UnityEditor.Handles.BeginGUI();
             if (!string.IsNullOrEmpty(label))
             {
-                UnityEditor.Handles.Label(rectTransform.position, label, new GUIStyle()
+                var p = rectTransform.position.x;
+
+                if (direction == Direction.Horizontal)
+                {
+                    p = rectTransform.position.y;
+                } else if (direction == Direction.Vertical)
+                {
+                    p = rectTransform.position.x;
+                }
+                
+                UnityEditor.Handles.Label(rectTransform.position, $"{label}: {p}", new GUIStyle()
                 {
                     normal = new GUIStyleState
                     {

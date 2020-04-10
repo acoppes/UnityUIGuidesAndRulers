@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace Gemserk.UICustomRulers
+namespace Gemserk.UIGuidesAndRulers
 {
     [ExecuteInEditMode]
-    public class UIMultiRuler : MonoBehaviour
+    public class UIGuide : MonoBehaviour
     {
         private static readonly float size = 10000;
         private static readonly float fillingAlpha = 0.1f;

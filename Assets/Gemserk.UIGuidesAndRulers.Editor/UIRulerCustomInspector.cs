@@ -1,15 +1,13 @@
-﻿using System;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEditor;
 
-namespace Gemserk.UICustomRulers.Editor
+namespace Gemserk.UIGuidesAndRulers.Editor
 {
-    [CustomEditor(typeof(UIRuler))]
+    [CustomEditor(typeof(UISimpleGuide))]
     public class UIRulerCustomInspector : UnityEditor.Editor
     {
         private void OnSceneGUI()
         {
-            var t = target as UIRuler;
+            var t = target as UISimpleGuide;
             
             // if (!string.IsNullOrEmpty(t.label))
             // {

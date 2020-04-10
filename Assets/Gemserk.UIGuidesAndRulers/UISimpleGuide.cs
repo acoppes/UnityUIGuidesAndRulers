@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-namespace Gemserk.UICustomRulers
+namespace Gemserk.UIGuidesAndRulers
 {
     [ExecuteInEditMode]
-    public class UIRuler : MonoBehaviour
+    public class UISimpleGuide : MonoBehaviour
     {
         private static readonly float size = 10000;
         private static readonly float selectionSize = 20;

@@ -19,7 +19,7 @@ Or add it manually to the `manifest.json`, like this:
 
 Download the [unitypackage](releases/Gemserk.UIGuidesAndRulers-0.0.1.unitypackage?raw=true) file located inside releases folder and install it manually.
 
-#Demo
+# Random Screenshots
 
 ![Alt text](images/ruler-example1.png?raw=true "Simple Guide")
 ![Alt text](images/ruler-example2.png?raw=true "Guide with ruler")

@@ -1,0 +1,17 @@
+{
+    "name": "Gemserk.UIGuidesAndRulers.Editor",
+    "references": [
+        "GUID:8d5d09dfa45fb894aa8ab34e64bf9763"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

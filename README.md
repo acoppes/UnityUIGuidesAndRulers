@@ -9,7 +9,7 @@ Just open Unity Package Manager and select add package from git URL and add this
 
 # Install manually
 
-Download the [unitypackage](releases/Gemserk.UIGuidesAndRulers-0.0.1.unitypackage) file located inside releases folder and install it manually.
+Download the [unitypackage](releases/Gemserk.UIGuidesAndRulers-0.0.1.unitypackage?raw=true) file located inside releases folder and install it manually.
 
 #Demo
 

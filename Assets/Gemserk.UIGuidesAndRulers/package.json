@@ -1,0 +1,20 @@
+{
+    "name": "com.gemserk.uiguidesandrulers",
+    "version": "0.0.1",
+    "displayName": "Gemserk UI - Guides And Rulers",
+    "description": "Some simple tools to help developing UIs in Unity.",
+    "unity": "2018.1",
+    "unityRelease": "1f1",
+    "dependencies": {
+   },
+   "keywords": [
+      "ui",
+      "tools",
+      "guides"
+    ],
+    "author": {
+      "name": "Ariel Coppes",
+      "email": "ariel.coppes@gmail.com",
+      "url": "https://blog.gemserk.com"
+    }
+  }

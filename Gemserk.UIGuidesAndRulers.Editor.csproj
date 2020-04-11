@@ -58,8 +58,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Gemserk.UIGuidesAndRulers.Editor\UIRulerCustomInspector.cs" />
-     <None Include="Assets\Gemserk.UIGuidesAndRulers.Editor\Gemserk.UIGuidesAndRulers.Editor.asmdef" />
+     <Compile Include="Assets\Gemserk.UIGuidesAndRulers\Editor\UIRulerCustomInspector.cs" />
+     <None Include="Assets\Gemserk.UIGuidesAndRulers\Editor\Gemserk.UIGuidesAndRulers.Editor.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/workspace/UICustomRulers/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

@@ -58,9 +58,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Gemserk.UIGuidesAndRulers\UIGuide.cs" />
-     <Compile Include="Assets\Gemserk.UIGuidesAndRulers\UISimpleGuide.cs" />
-     <None Include="Assets\Gemserk.UIGuidesAndRulers\Gemserk.UIGuidesAndRulers.asmdef" />
+     <Compile Include="Assets\Gemserk.UIGuidesAndRulers\Runtime\UIGuide.cs" />
+     <Compile Include="Assets\Gemserk.UIGuidesAndRulers\Runtime\UISimpleGuide.cs" />
+     <None Include="Assets\Gemserk.UIGuidesAndRulers\Runtime\Gemserk.UIGuidesAndRulers.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/workspace/UICustomRulers/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>

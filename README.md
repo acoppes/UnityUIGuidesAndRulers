@@ -4,8 +4,16 @@ Some simple tools to help developing UIs in Unity.
 
 # Install from UPM
 
-Just open Unity Package Manager and select add package from git URL and add this:
-`https://github.com/acoppes/UnityUIGuidesAndRulers.git#package`
+Just open Unity Package Manager and select add package from git URL and add this `https://github.com/acoppes/UnityUIGuidesAndRulers.git#package`
+
+Or add it manually to the `manifest.json`, like this:
+
+```
+  "dependencies": {
+    "com.gemserk.uiguidesandrulers": "https://github.com/acoppes/UnityUIGuidesAndRulers.git#package",
+    ...
+  }
+```
 
 # Install manually
 

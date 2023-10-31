@@ -19,6 +19,10 @@ Or add it manually to the `manifest.json`, like this:
 
 Download the [unitypackage](releases/Gemserk.UIGuidesAndRulers-0.0.1.unitypackage?raw=true) file located inside releases folder and install it manually.
 
+# Usage
+
+Drag and drop any prefab from the folder Runtime/Prefabs to a UI Canvas, or create your own by adding the UIGuide to an object inside a Canvas. You can check any of the Scenes in the project as examples too.
+
 # Random Screenshots
 
 ![Alt text](images/ruler-example1.png?raw=true "Simple Guide")
